@@ -3,6 +3,7 @@ package com.example.trabajadorapp;
 import androidx.appcompat.app.AppCompatActivity;
 import static com.example.trabajadorapp.MostrarLstTr.lstTrabajador;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.AlertDialog;
@@ -14,12 +15,15 @@ import android.widget.Button;
 
 import com.example.trabajadorapp.models.TrabajadorHora;
 import com.example.trabajadorapp.models.TrabajadorTiempoCompleto;
+import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.textfield.TextInputEditText;
 public class AgregarTr extends AppCompatActivity {
 
     private TextInputEditText edtNombre, edtApellido, edtEdad, edtValorPorH, edtHora, edtsueldo;
     private int idEleccionTrab = 0;
     private Button btnSaveData;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
